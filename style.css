@@ -1,0 +1,16 @@
+
+main{
+	display: block;
+	margin:auto;
+	padding: 100px;
+	width: 500px;
+	text-align: center;
+}
+button{
+	display: block;
+	margin:auto;
+	width: 200px;
+	height: 40px;
+	background-color:lightblue;
+	border:1px solid gray;
+}
