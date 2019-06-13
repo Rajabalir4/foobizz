@@ -1,13 +1,23 @@
 $(document).ready(function() {
 
-$("button").click(function(event) {
-	
-var input = parseInt(prompt("enter a number untill FooBizz you want to calculate"));
+var input = prompt("enter a number untill FooBizz you want to calculate");
 
-for (var i = 1; i <= input; i++) {
+if(input.indexOf(".")==-1){
+	fizzbuzz(parseInt(input));
+}else{
+	alert("enter an integer");
+}
+
+
+
+
+});
+
+function fizzbuzz(inp){
+
+for (var i = 1; i <= inp; i++) {
 	if(i%3==0 && i%5==0)
 	{
-
 		$('.output').append('fizzz buzz<br>').show();
 		console.log("fizzz buzz");
 	}else if(i%3==0){
@@ -23,6 +33,4 @@ for (var i = 1; i <= input; i++) {
 
 }
 
-});	
-});
-
+}
